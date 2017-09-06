@@ -1,21 +1,21 @@
 <?php
 
-namespace worstinme\uikit;
+namespace aaronschmied\uikit;
 
 use yii\web\AssetBundle;
 
 
 class UikitAsset extends AssetBundle
 {
-    public $sourcePath = '@worstinme/uikit/uikit';
+    public $sourcePath = '@aaronschmied/uikit/uikit';
 
     public $css = [
         'css/uikit.min.css',
-        'css/components/form-advanced.min.css',
     ];
 
     public $js = [
-        'js/uikit.js',
+        'js/uikit.min.js',
+        'js/uikit-icons.min.js',
     ];
 
     public $depends = [

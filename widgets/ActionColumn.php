@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\uikit\widgets;
+namespace aaronschmied\uikit\widgets;
 
 use Yii;
 use yii\helpers\Html;

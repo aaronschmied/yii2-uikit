@@ -1,10 +1,10 @@
 <?php
 
-namespace worstinme\uikit\widgets;
+namespace aaronschmied\uikit\widgets;
 
 class ListView extends \yii\widgets\ListView
 {
 
-	public $pager =  ['class'=> 'worstinme\uikit\widgets\LinkPager'];
+	public $pager =  ['class'=> 'aaronschmied\uikit\widgets\LinkPager'];
 
 }

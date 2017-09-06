@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\uikit\widgets;
+namespace aaronschmied\uikit\widgets;
 
 use Yii;
 use yii\base\Widget;
@@ -59,10 +59,10 @@ class Slideshow extends Widget
 
             return $this->render('slideshow',[
                 'items'=>$this->items,
-            ]); 
+            ]);
 
         }
 
         return null;
-    }    
+    }
 }

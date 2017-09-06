@@ -1,10 +1,10 @@
 <?php
 
-namespace worstinme\uikit\widgets;
+namespace aaronschmied\uikit\widgets;
 
 use yii\helpers\Html;
 
-class LinkPager extends \yii\widgets\LinkPager 
+class LinkPager extends \yii\widgets\LinkPager
 {
 
 	public $options = ['class' => 'uk-width-1-1 uk-pagination uk-text-center'];

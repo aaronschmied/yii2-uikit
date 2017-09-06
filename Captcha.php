@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\uikit;
+namespace aaronschmied\uikit;
 
 class Captcha extends \yii\captcha\Captcha
 {

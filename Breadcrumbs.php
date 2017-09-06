@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\uikit;
+namespace aaronschmied\uikit;
 
 use Yii;
 
@@ -10,4 +10,4 @@ class Breadcrumbs extends \yii\widgets\Breadcrumbs
 
 	public $activeItemTemplate = "<li class=\"uk-active\">{link}</li>\n";
 
-} 
+}

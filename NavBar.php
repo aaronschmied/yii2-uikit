@@ -1,5 +1,5 @@
 <?php
-namespace worstinme\uikit;
+namespace aaronschmied\uikit;
 use yii\helpers\Html;
 use Yii;
 /**
@@ -69,10 +69,10 @@ class NavBar extends Widget
      */
     public function run()
     {
-        
+
         if ($this->container) {
             echo Html::endTag('div');
-        } 
+        }
         echo Html::endTag('nav');
     }
 }

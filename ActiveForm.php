@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2008 Yii Software LLC
  * @license http://www.yiiframework.com/license/
  */
-namespace worstinme\uikit;
+namespace aaronschmied\uikit;
 
 use Yii;
 use yii\helpers\Html;
@@ -15,7 +15,7 @@ use yii\widgets\ActiveFormAsset;
 class ActiveForm extends \yii\widgets\ActiveForm
 {
 
-    public $fieldClass = 'worstinme\uikit\ActiveField';
+    public $fieldClass = 'aaronschmied\uikit\ActiveField';
     /**
      * @var string the form layout. Either 'default', 'horizontal' or 'stacked'.
      */
@@ -23,7 +23,7 @@ class ActiveForm extends \yii\widgets\ActiveForm
     /**
      * @var string the form field size. Either 'large', 'small'.
      */
-    public $field_size = false; 
+    public $field_size = false;
     /**
      * @var string the form field width. Either 'full','large','medium', 'small', 'mini'.
      */
@@ -57,7 +57,7 @@ class ActiveForm extends \yii\widgets\ActiveForm
             }
 
             Html::addCssClass($this->inputOptions, 'uk-form-' . $this->field_size);
-                     
+
         }
 
         if ($this->field_size) {
@@ -66,7 +66,7 @@ class ActiveForm extends \yii\widgets\ActiveForm
             }
             else {
                 Html::addCssClass($this->inputOptions, 'uk-form-' . $this->field_size);
-            }                       
+            }
         }
 
         if ($this->field_width) {
@@ -75,14 +75,14 @@ class ActiveForm extends \yii\widgets\ActiveForm
             }
             else {
                 Html::addCssClass($this->inputOptions, $this->field_width != 'full' ? 'uk-form-width-' . $this->field_width : 'uk-width-1-1');
-            }                       
+            }
         }
 
         if (isset($this->inputOptions['class'])) {
             $this->fieldConfig['inputOptions'] = ['class' => $this->inputOptions['class']];
         }
 
-        
+
 
 
 
@@ -101,7 +101,7 @@ class ActiveForm extends \yii\widgets\ActiveForm
             $view = $this->getView();
             ActiveFormAsset::register($view);
             if ($this->enableClientValidation) {
-            
+
                 if ($this->scripts_inform) {
                     echo "<script type=\"text/javascript\">jQuery(document).ready(function () { jQuery('#$id').yiiActiveForm($attributes, $options);});</script>";
                 }

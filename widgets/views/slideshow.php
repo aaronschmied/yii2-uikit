@@ -2,8 +2,6 @@
 
 use yii\helpers\Html;
 
-\worstinme\uikit\assets\Slideshow::register($this);
-
 $params = [];
 
 if ($this->context->height !== null) {

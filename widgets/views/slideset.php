@@ -2,9 +2,6 @@
 
 use yii\helpers\Html;
 
-\worstinme\uikit\assets\Slideset::register($this);
-\worstinme\uikit\assets\Lightbox::register($this);
-
 $id = uniqid();
 
 if (count($data)): ?>
@@ -13,7 +10,7 @@ if (count($data)): ?>
         <ul class="uk-grid uk-slideset uk-grid-small uk-grid-width-1-2 uk-grid-width-medium-1-4">
             <?php foreach ($data as $d): ?>
             	<li><?=Html::a(Html::img($d['preview']),$d['image'],["data-uk-lightbox"=>"{group:'".$id."'}"])?></li>
-            <?php endforeach ?>         
+            <?php endforeach ?>
         </ul>
         <a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
         <a href="" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>

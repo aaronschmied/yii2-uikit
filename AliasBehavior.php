@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\uikit; 
+namespace aaronschmied\uikit; 
 
 class AliasBehavior extends \yii\behaviors\SluggableBehavior
 {
@@ -8,7 +8,7 @@ class AliasBehavior extends \yii\behaviors\SluggableBehavior
     {
     	if ($this->owner->isAttributeChanged($this->slugAttribute)) {
             return false;
-        } 
+        }
 
         if (empty($this->owner->{$this->slugAttribute})) {
             return true;

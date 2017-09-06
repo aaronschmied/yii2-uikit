@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\uikit\widgets;
+namespace aaronschmied\uikit\widgets;
 
 use Yii;
 use yii\base\Widget;
@@ -47,14 +47,14 @@ class Slideset extends Widget
                             'preview'=> str_replace(Yii::getAlias('@webroot'),"", $preview),
                         ];
                     }
-                    
+
                 }
                 $this->data = $data;
             }
         }
-        
+
         return $this->render('slideset',[
                 'data'=>$this->data,
-            ]);    
-    }    
+            ]);
+    }
 }

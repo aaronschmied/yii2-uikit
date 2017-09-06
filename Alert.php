@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\uikit;
+namespace aaronschmied\uikit;
 
 use yii\helpers\Html;
 
@@ -44,7 +44,7 @@ class Alert extends \yii\base\Widget
         }
 
         if ($this->type === null) {
-            
+
             $flashes = $session->getAllFlashes();
 
             foreach ($flashes as $type => $data) {

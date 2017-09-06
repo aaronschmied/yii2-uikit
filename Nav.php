@@ -1,5 +1,5 @@
 <?php
-namespace worstinme\uikit;
+namespace aaronschmied\uikit;
 
 use Yii;
 use yii\base\InvalidConfigException;
@@ -77,7 +77,7 @@ class Nav extends Widget
         else {
             return Html::tag('ul', implode("\n", $items), $this->options);
         }
-        
+
     }
     /**
      * Renders a widget's item.
@@ -118,7 +118,7 @@ class Nav extends Widget
             }
             else {
                 $items = self::widget(['items' => $items, 'options' => ['class' => 'uk-nav-sub']]);
-            }            
+            }
         }
         $link = $label;
         if ($url) {

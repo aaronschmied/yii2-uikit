@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\uikit; 
+namespace aaronschmied\uikit;
 
 use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
@@ -15,13 +15,13 @@ class ActiveField extends \yii\widgets\ActiveField
 
 	public $errorOptions = ['class' => 'uk-form-help-block uk-text-danger'];
 
-	public $hintOptions = ['class' => 'uk-form-help-block'];    
+	public $hintOptions = ['class' => 'uk-form-help-block'];
 
 	public function begin()
     {
 
         $attribute = Html::getAttributeName($this->attribute);
-        
+
         if ($this->model->hasErrors($attribute)) {
             $this->inputOptions['class'] .= ' uk-form-danger';
         }
@@ -47,7 +47,6 @@ class ActiveField extends \yii\widgets\ActiveField
         $script = "$('body').on('change','$related_id',function(){ $.post('$url',{name:$('$related_id').val()},function(data){ if ($('$alias_id').val()) { UIkit.modal.confirm('Replace alias? '+data.alias, function(){ $('$alias_id').val(data.alias) }); } else $('$alias_id').val(data.alias)} )});";
 
         $view->registerJs($script,$view::POS_READY);
-        \worstinme\uikit\assets\Notify::register($view);
 
         $options = array_merge($this->inputOptions, $options);
         $this->adjustLabelFor($options);

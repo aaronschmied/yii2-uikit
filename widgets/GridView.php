@@ -1,12 +1,12 @@
 <?php
 
-namespace worstinme\uikit\widgets;
+namespace aaronschmied\uikit\widgets;
 
 class GridView extends \yii\grid\GridView
 {
 	public $tableOptions = ['class' => 'uk-table uk-form uk-table-condensed uk-table-hover'];
-	public $summaryOptions = ['class'=>'uk-text-center']; 
-	public $pager =  ['class'=> 'worstinme\uikit\widgets\LinkPager'];
+	public $summaryOptions = ['class'=>'uk-text-center'];
+	public $pager =  ['class'=> 'aaronschmied\uikit\widgets\LinkPager'];
 	const FORMATTER_DECIMAL = 'Decimal';
 	const FORMATTER_PERCENT = 'Percent';
 	const FORMATTER_INTEGER = 'Integer';
