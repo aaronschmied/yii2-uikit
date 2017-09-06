@@ -1,17 +1,22 @@
 {
-	"name": "worstinme/yii2-uikit",
+	"name": "aaronschmied/yii2-uikit",
 	"description": "Uikit for Yii2",
 	"keywords": ["yii2", "uikit", "widgets"],
 	"type": "yii2-extension",
 	"license": "MIT",
 	"support": {
-		"source": "https://github.com/worstinme/yii2-uikit",
-        "issues": "https://github.com/worstinme/yii2-uikit/issues"
+		"source": "https://github.com/aaronschmied/yii2-uikit",
+        "issues": "https://github.com/aaronschmied/yii2-uikit/issues"
 	},
 	"authors": [
         {
             "name": "Evgeny Zakirov",
             "homepage" : "https://github.com/worstinme"
+        },
+        {
+            "name": "Aaron Schmied",
+            "homepage" : "https://github.com/aaronschmied"
+            "email": "aaron@pro-sales.ch"
         }
 	],
 	"require": {
@@ -19,7 +24,7 @@
     },
 	"autoload": {
 		"psr-4": {
-            "worstinme\\uikit\\": ""
+            "aaronschmied\\uikit\\": ""
         }
 	}
 }
