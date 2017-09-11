@@ -7,19 +7,20 @@ use yii\helpers\ArrayHelper;
 
 class ActiveField extends \yii\widgets\ActiveField
 {
-	public $template = "{label}\n<div class=\"uk-form-controls\">{input}\n{error}\n{hint}\n</div>\n";
+    public $template = "<div>\n{label}\n <div class=\"uk-form-controls\">{input}\n{error}\n{hint}\n</div>\n</div>\n";
 
-	public $labelOptions = ['class' => 'uk-form-label'];
+    public $labelOptions = ['class' => 'uk-form-label'];
 
-	public $options = ['class' => 'uk-form-row'];
+    public $options = ['class' => 'uk-form-row'];
 
-	public $errorOptions = ['class' => 'uk-form-help-block uk-text-danger'];
+    public $inputOptions = ['class' => 'uk-input'];
 
-	public $hintOptions = ['class' => 'uk-form-help-block'];
+    public $errorOptions = ['class' => 'uk-form-help-block uk-text-danger'];
 
-	public function begin()
+    public $hintOptions = ['class' => 'uk-form-help-block'];
+
+    public function begin()
     {
-
         $attribute = Html::getAttributeName($this->attribute);
 
         if ($this->model->hasErrors($attribute)) {
@@ -32,6 +33,7 @@ class ActiveField extends \yii\widgets\ActiveField
 
     public function checkbox($options = [], $enclosedByLabel = true)
     {
+        $this->inputOptions = ['class' => 'uk-checkbox'];
         return parent::checkbox($options, $enclosedByLabel);
     }
 
