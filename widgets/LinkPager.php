@@ -7,8 +7,13 @@ use yii\helpers\Html;
 class LinkPager extends \yii\widgets\LinkPager
 {
 
-	public $options = ['class' => 'uk-width-1-1 uk-pagination uk-text-center'];
+	public $options = ['class' => 'uk-pagination uk-flex-center'];
+
 	public $activePageCssClass = 'uk-active';
+	public $disabledPageCssClass = 'uk-disabled';
+
+    public $prevPageLabel = "<span uk-pagination-previous></span>";
+    public $nextPageLabel = "<span uk-pagination-next></span>";
 
 	public function init()
     {
